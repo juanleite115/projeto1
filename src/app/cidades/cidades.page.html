@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cidades Favoritas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cidade of cidades" (click)="selecionarCidade(cidade.nome)">
+      <ion-label>
+        <h2>{{cidade.nome}}</h2>
+        <p>{{cidade.pais}}</p>
+      </ion-label>
+      <ion-icon *ngIf="cidadeSelecionada === cidade.nome" name="checkmark" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

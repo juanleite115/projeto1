@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Configurações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Unidade de Temperatura</ion-label>
+      <ion-select [(ngModel)]="unidadeTemperatura">
+        <ion-select-option value="celsius">Celsius (°C)</ion-select-option>
+        <ion-select-option value="fahrenheit">Fahrenheit (°F)</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Receber Notificações</ion-label>
+      <ion-toggle [(ngModel)]="notificacoes"></ion-toggle>
+    </ion-item>
+
+    <ion-button expand="block" (click)="salvarConfiguracoes()">
+      Salvar Configurações
+    </ion-button>
+  </ion-list>
+</ion-content>
