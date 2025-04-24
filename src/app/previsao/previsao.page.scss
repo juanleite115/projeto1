@@ -1,8 +1,13 @@
 ion-spinner {
     margin: 20px auto;
     display: block;
+    
   }
-  
+  div {
+    margin: 50% auto;
+    display: grid;
+    place-items: center;
+  }
   ion-avatar img {
     background: rgba(var(--ion-color-primary-rgb), 0.1);
     border-radius: 50%;

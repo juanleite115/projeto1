@@ -9,12 +9,9 @@ import { PrevisaoPage } from '../previsao/previsao.page';
 })
 export class HomePage {teste: string = "50"
   dadosExemplo: any;
-  data: string = "10/05/2023 09:00"
-  temp: string ="20°C"
-  descricao:string = 'Parcialmente nublado'
-  icone: string = 'https://openweathermap.org/img/wn/02d.png'
+  
   carregarPrevisaoExemplo() {
-    // Dados simulados da API
+    
     this.dadosExemplo = [
       {
         data: '10/05/2023 09:00',

@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule) },
   { path: 'previsao', loadChildren: () => import('./previsao/previsao.module').then(m => m.PrevisaoPageModule) },
   { path: 'cidades', loadChildren: () => import('./cidades/cidades.module').then(m => m.CidadesPageModule) },
+  { path: 'alerta', loadChildren:()=> import ('./alerta/alerta.module').then(m=>m.AlertaPageModule)},
   { path: 'configuracoes', loadChildren: () => import('./configuracoes/configuracoes.module').then(m => m.ConfiguracoesPageModule) },
 ];
 

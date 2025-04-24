@@ -10,11 +10,11 @@ import { DatePipe } from '@angular/common';
   standalone: false
 })
 export class PrevisaoPage {
-  previsoes: any[] = [];
-  cidade: string = 'São Paulo';
-  dataSelecionada: string = new Date().toISOString();
-
-  constructor(private http: HttpClient, private datePipe: DatePipe) {}
+  data: string = "11/04/2023 12:13"
+  temp: string ="20°C"
+  descricao:string = 'Parcialmente nublado'
+  icone: string = 'https://openweathermap.org/img/wn/02d.png'
+  /*constructor(private http: HttpClient, private datePipe: DatePipe) {}
 
   buscarPrevisao() {
     const apiKey = '8d9ff3b037be9d8a8a0e8bf5e423fe74';
@@ -33,6 +33,6 @@ export class PrevisaoPage {
   formatarData(data: string): string {
     return this.datePipe.transform(data, 'dd/MM/yyyy HH:mm') || '';
   }
-  
+  */
   
 }
